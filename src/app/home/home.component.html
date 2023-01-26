@@ -1,0 +1,64 @@
+<nav class="navbar" [ngClass]="{ sticky: isSticky }">
+  <a class="navbar-brand">
+    <img src="src\app\home\logo.png" alt="logo" />
+    <h1>My App</h1>
+  </a>
+  <div class="navbar-menu">
+    <a routerLink="/dash" class="navbar-item">Dashboard</a>
+    <a routerLink="/home" class="navbar-item">Home</a>
+    <a routerLink="/login" class="navbar-item">Sign In</a>
+    <a routerLink="/login" class="navbar-item">Sign Up</a>
+    <a routerLink="/home" class="navbar-item">Log Out</a>
+  </div>
+</nav>
+
+<div class="banner">
+  <div class="banner-content">
+    <h1>Welcome to My App</h1>
+    <p>This is the Home Index Page to My Web App based on Angular</p>
+  </div>
+</div>
+
+<br />
+<h2>Features</h2>
+<div class="features">
+  <div class="feature card" *ngFor="let feature of features">
+    <img src="{{ feature.img }}" alt="{{ feature.title }}" />
+    <h3>{{ feature.title }}</h3>
+    <p>{{ feature.description }}</p>
+  </div>
+</div>
+
+<h2>Testimonials</h2>
+<div class="testimonials">
+  <div class="testimonial card" *ngFor="let testimonial of testimonials">
+    <img src="{{ testimonial.img }}" alt="{{ testimonial.name }}" />
+    <h3>{{ testimonial.name }}</h3>
+    <p>{{ testimonial.quote }}</p>
+  </div>
+</div>
+
+<h2>Blogs</h2>
+<div class="blogs">
+  <div class="blog card" *ngFor="let post of blogPosts">
+    <img src="{{ post.img }}" alt="{{ post.title }}" class="blog-img" />
+    <h3>{{ post.title }}</h3>
+    <p>{{ post.content }}</p>
+    <a href="#">Read More</a>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-content">
+    <p>Copyright © 2023 My App</p>
+  </div>
+  <div class="footer-links">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </div>
+</footer>
+
+<script src="node_modules/angular/angular.min.js"></script>
+<script src="node_modules/chart.js/dist/Chart.min.js"></script>
+<script src="node_modules/angular-chart.js/dist/angular-chart.min.js"></script>

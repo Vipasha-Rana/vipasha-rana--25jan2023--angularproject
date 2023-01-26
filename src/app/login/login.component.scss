@@ -1,0 +1,149 @@
+// mat-card {
+//     max-width: 600px;
+//     margin: 2em auto;
+//     text-align: center;
+//     max-height: 600px;
+//   }
+
+//   .header{
+//     text-align: center;
+
+//   }
+//   .full-width {
+//     width: 80%;
+//   }
+
+//   .button-row {
+//     padding-top: 5px;
+//   }
+
+//   .button-row a {
+//     margin-right: 8px;
+//     text-align: center;
+//   }
+
+//   .forget-password{
+//     padding-left: 0px;
+//   }
+
+//   .emailInput{
+//     padding-top: 10px;
+//   }
+
+//   .contentBody {
+//     padding: 60px 1rem;
+//     background :#1ba84c;
+//     display: block;
+//   }
+
+//   .aLink{
+//     float: right;
+//     padding-right: 60px;
+//     text-decoration: none;
+//   }
+
+.navbar {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  transition: background-color 0.5s ease;
+  margin-bottom: 100px;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand h1{
+  margin-top: 15px;
+}
+
+.navbar-brand img {
+  content: url(logo.png);
+  width: 50px;
+  margin-right: 1rem;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.header {
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 2em;
+  }
+
+  .emailInput {
+  margin-bottom: 1em;
+  }
+
+  .full-width {
+  width: 100%;
+  }
+
+  .aLink {
+  color: #0077C9;
+  text-decoration: none;
+  cursor: pointer;
+  }
+
+  .aLink:hover {
+  text-decoration: underline;
+  }
+
+  .button-row {
+  text-align: center;
+  margin-top: 2em;
+  }
+
+  button {
+  width: 150px;
+  margin-top: 1em;
+  }
+
+  mat-card {
+  width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  }
+
+  mat-form-field {
+  width: 100%;
+  }
+
+  /* Add hover effect for the login button */
+  button:hover {
+  background-color: #0077C9;
+  color: white;
+  cursor: pointer;
+  }
+
+  /* Add hover effect for the "Forgot Password" link */
+  .text-link:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  }
+
+  /* Add hover effect for the "Create New Account" button */
+  .button-row p:hover {
+  cursor: pointer;
+  color: #0077C9;
+  }
+
+  /* Add some spacing to the form */
+  form {
+  margin: 2em;
+  }
+
+  /* Style the form fields */
+  mat-form-field {
+  width: 100%;
+  }
